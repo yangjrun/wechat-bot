@@ -11,6 +11,4 @@ async function onScan(qrcode, status) {
     console.log(status, qrcodeImageUrl)
 }
 
-export {
-    onScan
-}
+export default onScan

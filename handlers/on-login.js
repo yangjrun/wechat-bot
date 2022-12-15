@@ -5,9 +5,8 @@ async function onLogin(user) {
      * Or use `this` directly:
      *   `console.info(this.userSelf())`
      */
+    // var cache = []
     console.log(`${user} login`)
 }
 
-export {
-    onLogin
-}
+export default onLogin

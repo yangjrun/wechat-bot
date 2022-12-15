@@ -27,6 +27,4 @@ async function onMessage(message) {
     }
 }
 
-export {
-    onMessage
-}
+export default onMessage

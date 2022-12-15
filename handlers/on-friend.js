@@ -13,6 +13,4 @@ async function onFriend(contact, request) {
     }
 }
 
-export {
-    onFriend
-}
+export default onFriend
