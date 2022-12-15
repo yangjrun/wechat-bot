@@ -1,10 +1,14 @@
-FROM node:latest
+FROM node:latest AS dependencies
 
 WORKDIR /home/app
 
-COPY package.json /home/app/
+RUN apk add --no-cache python make g++
 
-RUN npm install --production --registry https://registry.npm.taobao.org
+COPY package*.json /home/app
+
+RUN ["npm", "install", "--registry=http://r.tnpm.oa.com", "--production"]
+
+RUN apk del .gyp
 
 COPY . /home/app
 
