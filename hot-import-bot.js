@@ -1,4 +1,4 @@
-import { WechatyBuilder, } from 'wechaty'
+import { WechatyBuilder } from 'wechaty'
 import onFriend from './handlers/on-friend.js'
 import onLogin from './handlers/on-login.js'
 import onMessage from './handlers/on-message.js'

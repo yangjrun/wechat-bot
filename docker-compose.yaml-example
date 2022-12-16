@@ -1,6 +1,9 @@
 version: "3"
 services:
   wechat-bot:
+    environment: 
+      amap_private_key: ''
+      amap_public_key: ''
     image: wechat-bot
     build: ./
     container_name: wechat-bot

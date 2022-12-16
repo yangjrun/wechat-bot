@@ -1,5 +1,5 @@
 
-import { getWeatherForDay } from '../weather/index.js'
+import { getWeatherForDay } from '../lib/weather/index.js'
 
 async function onMessage(message) {
     /**
