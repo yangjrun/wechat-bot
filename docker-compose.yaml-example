@@ -7,3 +7,6 @@ services:
     image: wechat-bot
     build: ./
     container_name: wechat-bot
+networks:
+  clash_proxy_net:
+    external: true

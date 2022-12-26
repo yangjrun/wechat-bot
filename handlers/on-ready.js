@@ -12,7 +12,10 @@ async function onReady() {
         }
         let contact = item.name && (await that.Contact.find({ name: item.name })) || item.alias && (await that.Contact.find({ alias: item.alias }))  // 获取你要发送的联系人
 
-        getNiceSentence().then(async (response) => {
+        // getNiceSentence().then(async (response) => {
+        //     await contact.say(response)
+        // })
+        getWeatherForDay('增城1号智谷').then(async (response) => {
             await contact.say(response)
         })
 
